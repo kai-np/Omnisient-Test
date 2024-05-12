@@ -1,0 +1,47 @@
+
+
+  <div class="holdingContainer">
+    <div class="sidebar">
+      <h1> Vending Machine Inputs</h1>
+      <div class="vendingInputs">
+        <div class="purchaseForm">
+
+          <input #purchaseAmount type="number" placeholder="Purchase ammount"
+                 class="purchaseInput">
+          <input #tenderAmount type="number" placeholder="Tender ammount"
+                 class="purchaseInput">
+
+          <select #currencyCode class="purchaseInput">
+            <option value="NA">Choose a currency</option>
+            <option value="USD">US Dollar</option>
+            <option value="GBP">Great British Pound</option>
+          </select>
+          <button (click)="processFormSubmission(purchaseAmount.value, tenderAmount.value, currencyCode.value)" class="purchaseButton">Calculate Change</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="outputArea">
+      <div class="rawResultsOutputArea">
+        <h1>Calculated Change Output:</h1>
+        <div class="rawResultsOutput">
+          Total change: {{ fetchedOptimalChange.totalChange }} |
+          Coins issued as change: {{ fetchedOptimalChange.changeArrayString }}
+        </div>
+      </div>
+      <div class="visualOutputArea">
+        <h1>Visual Change Output:</h1>
+        <div class="visualOutput">
+          <div class="coinOutput">
+            <div *ngFor="let number of fetchedOptimalChange.optimalChange" class="coin">
+              <app-coin [change]="number"></app-coin>
+              
+            </div>
+
+          </div>
+          
+
+        </div>
+      </div>
+

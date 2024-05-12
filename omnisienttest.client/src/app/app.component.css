@@ -1,0 +1,120 @@
+.holdingContainer {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.vendingBody {
+  margin: 0px;
+}
+
+.sidebar {
+  width: 30%;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.rawResultsOutput {
+  font-size: 1.4rem;
+  width: 80%;
+  border-radius: 20px;
+  height: 5rem;
+  color: #ff0076;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 3rem;
+}
+
+.visualOutputArea {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.visualOutput {
+  width: 80%;
+  height: 20rem;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.coinOutput {
+  padding: 1rem;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.rawResultsOutputArea {
+  width: 100%;
+  color: rgb(255 246 246);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.purchaseForm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.outputArea {
+  width: 70%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.purchaseInput {
+  width: 80%;
+  outline: solid 4px #ff0076;
+  height: 7vh;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+  display: flex;
+  text-align: center;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.purchaseButton {
+  width: 60%;
+  color: white;
+  height: 6vh;
+  background-color: #ff0076;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  display: flex;
+  text-align: center;
+  border: none;
+  justify-content: center;
+  align-items: center;
+}
